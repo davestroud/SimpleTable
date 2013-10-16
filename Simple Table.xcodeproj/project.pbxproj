@@ -13,7 +13,6 @@
 		63042975180F3C0D00BE62F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63042973180F3C0D00BE62F1 /* InfoPlist.strings */; };
 		63042977180F3C0D00BE62F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63042976180F3C0D00BE62F1 /* main.m */; };
 		6304297B180F3C0D00BE62F1 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6304297A180F3C0D00BE62F1 /* BIDAppDelegate.m */; };
-		6304297E180F3C0D00BE62F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6304297C180F3C0D00BE62F1 /* Main.storyboard */; };
 		63042981180F3C0D00BE62F1 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63042980180F3C0D00BE62F1 /* BIDViewController.m */; };
 		63042983180F3C0D00BE62F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63042982180F3C0D00BE62F1 /* Images.xcassets */; };
 		6304298A180F3C0D00BE62F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63042989180F3C0D00BE62F1 /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		6304298C180F3C0D00BE62F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6304296E180F3C0D00BE62F1 /* UIKit.framework */; };
 		63042994180F3C0D00BE62F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63042992180F3C0D00BE62F1 /* InfoPlist.strings */; };
 		63042996180F3C0D00BE62F1 /* Simple_TableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63042995180F3C0D00BE62F1 /* Simple_TableTests.m */; };
+		634A4929180F4663002DDF3D /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634A4928180F4663002DDF3D /* BIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		63042978180F3C0D00BE62F1 /* Simple Table-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simple Table-Prefix.pch"; sourceTree = "<group>"; };
 		63042979180F3C0D00BE62F1 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
 		6304297A180F3C0D00BE62F1 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
-		6304297D180F3C0D00BE62F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6304297F180F3C0D00BE62F1 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		63042980180F3C0D00BE62F1 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		63042982180F3C0D00BE62F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		63042991180F3C0D00BE62F1 /* Simple TableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple TableTests-Info.plist"; sourceTree = "<group>"; };
 		63042993180F3C0D00BE62F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63042995180F3C0D00BE62F1 /* Simple_TableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_TableTests.m; sourceTree = "<group>"; };
+		634A4928180F4663002DDF3D /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 		6304295E180F3C0D00BE62F1 = {
 			isa = PBXGroup;
 			children = (
+				634A4928180F4663002DDF3D /* BIDViewController.xib */,
 				63042970180F3C0D00BE62F1 /* Simple Table */,
 				6304298F180F3C0D00BE62F1 /* Simple TableTests */,
 				63042969180F3C0D00BE62F1 /* Frameworks */,
@@ -114,7 +115,6 @@
 			children = (
 				63042979180F3C0D00BE62F1 /* BIDAppDelegate.h */,
 				6304297A180F3C0D00BE62F1 /* BIDAppDelegate.m */,
-				6304297C180F3C0D00BE62F1 /* Main.storyboard */,
 				6304297F180F3C0D00BE62F1 /* BIDViewController.h */,
 				63042980180F3C0D00BE62F1 /* BIDViewController.m */,
 				63042982180F3C0D00BE62F1 /* Images.xcassets */,
@@ -229,9 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634A4929180F4663002DDF3D /* BIDViewController.xib in Resources */,
 				63042983180F3C0D00BE62F1 /* Images.xcassets in Resources */,
 				63042975180F3C0D00BE62F1 /* InfoPlist.strings in Resources */,
-				6304297E180F3C0D00BE62F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +281,6 @@
 				63042974180F3C0D00BE62F1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6304297C180F3C0D00BE62F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6304297D180F3C0D00BE62F1 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		63042992180F3C0D00BE62F1 /* InfoPlist.strings */ = {
@@ -461,6 +453,7 @@
 				6304299B180F3C0D00BE62F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6304299C180F3C0D00BE62F1 /* Build configuration list for PBXNativeTarget "Simple TableTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +462,7 @@
 				6304299E180F3C0D00BE62F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

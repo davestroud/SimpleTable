@@ -14,16 +14,39 @@
 
 @implementation BIDViewController
 
-- (void)viewDidLoad
+- (void)viewDidLoad;
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.dwarves = @[@"Sleepy", @"Doc", @"Grumpy", @"Dopey", @"Thorin",
+                     @"Dorin", @"Nori", @"Ori", @"Balin", @"Dwalin",
+                     @"Fili", @"Kili", @"Oin", @"Gloin", @"Bifur",
+                     @"Borur", @"Bombur"];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.dwarves count];
+}
+
+- (UITableViewCell *)tableView: (UITableViewCell *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
+                             SimpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+    }
+                
+                cell.textLabel.text = self.dwarves[indexPath.row];
+                return cell;
 }
 
 @end
