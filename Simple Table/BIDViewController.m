@@ -14,6 +14,8 @@
 
 @implementation BIDViewController
 
+
+// viewDidLoad method - created an array to display the table
 - (void)viewDidLoad;
 {
     [super viewDidLoad];
@@ -30,19 +32,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// tableView:numberOfRowsInSection method - this asks how many rows are in a particular section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.dwarves count];
 }
 
-- (UITableViewCell *)tableView: (UITableViewCell *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+// tableView:cellForRowAtIndexPath method
+- (UITableViewCell *)tableView: (UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
                              SimpleTableIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+        cell = [[UITableViewCell alloc]
+                initWithStyle:UITableViewCellStyleDefault
+                reuseIdentifier:SimpleTableIdentifier];
     }
                 
                 cell.textLabel.text = self.dwarves[indexPath.row];

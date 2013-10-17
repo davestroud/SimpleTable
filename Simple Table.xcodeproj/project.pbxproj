@@ -52,7 +52,7 @@
 		63042991180F3C0D00BE62F1 /* Simple TableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple TableTests-Info.plist"; sourceTree = "<group>"; };
 		63042993180F3C0D00BE62F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63042995180F3C0D00BE62F1 /* Simple_TableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_TableTests.m; sourceTree = "<group>"; };
-		634A4928180F4663002DDF3D /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDViewController.xib; sourceTree = "<group>"; };
+		634A4928180F4663002DDF3D /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BIDViewController.xib; path = ../BIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,6 @@
 		6304295E180F3C0D00BE62F1 = {
 			isa = PBXGroup;
 			children = (
-				634A4928180F4663002DDF3D /* BIDViewController.xib */,
 				63042970180F3C0D00BE62F1 /* Simple Table */,
 				6304298F180F3C0D00BE62F1 /* Simple TableTests */,
 				63042969180F3C0D00BE62F1 /* Frameworks */,
@@ -113,10 +112,9 @@
 		63042970180F3C0D00BE62F1 /* Simple Table */ = {
 			isa = PBXGroup;
 			children = (
-				63042979180F3C0D00BE62F1 /* BIDAppDelegate.h */,
-				6304297A180F3C0D00BE62F1 /* BIDAppDelegate.m */,
 				6304297F180F3C0D00BE62F1 /* BIDViewController.h */,
 				63042980180F3C0D00BE62F1 /* BIDViewController.m */,
+				634A4928180F4663002DDF3D /* BIDViewController.xib */,
 				63042982180F3C0D00BE62F1 /* Images.xcassets */,
 				63042971180F3C0D00BE62F1 /* Supporting Files */,
 			);
@@ -126,6 +124,8 @@
 		63042971180F3C0D00BE62F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63042979180F3C0D00BE62F1 /* BIDAppDelegate.h */,
+				6304297A180F3C0D00BE62F1 /* BIDAppDelegate.m */,
 				63042972180F3C0D00BE62F1 /* Simple Table-Info.plist */,
 				63042973180F3C0D00BE62F1 /* InfoPlist.strings */,
 				63042976180F3C0D00BE62F1 /* main.m */,
