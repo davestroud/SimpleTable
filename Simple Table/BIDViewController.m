@@ -59,6 +59,7 @@
                 
                 cell.textLabel.text = self.dwarves[indexPath.row];
                 return cell;
+
 }
 
 @end
